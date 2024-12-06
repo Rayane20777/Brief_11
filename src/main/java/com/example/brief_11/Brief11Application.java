@@ -1,13 +1,25 @@
 package com.example.brief_11;
 
+import com.example.brief_11.service.RoleService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Brief11Application {
+public class Brief11Application // implements CommandLineRunner
+ {
+
+	@Autowired
+	private RoleService roleService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Brief11Application.class, args);
+
 	}
+//	@Override
+//	public void run(String... args) throws Exception {
+//		roleService.addDefaultRoles(); // Add default roles on startup
+//	}
 
 }
