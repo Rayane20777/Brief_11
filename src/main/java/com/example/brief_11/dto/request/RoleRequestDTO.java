@@ -1,8 +1,8 @@
 package com.example.brief_11.dto.request;
 
-import lombok.Data;
+import lombok.Getter;
 
-@Data
+@Getter
 public class RoleRequestDTO {
     private String name;
 }
