@@ -1,15 +1,15 @@
 package com.example.brief_11.dto.response;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 
 import java.util.UUID;
 
-@Getter
+@Data
 @AllArgsConstructor
 public class UserResponseDTO {
     private UUID id;
-    private String login;
-    private Boolean active;
-    private RoleResponseDTO role;
+    private String username;
+    private String email;
 }
+
