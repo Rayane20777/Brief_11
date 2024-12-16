@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from the Git repository
-                git 'https://github.com/Rayane20777/Brief_11.git' // Replace with your GitHub repository URL
+                git 'https://github.com/Rayane20777/Brief_11.git'
             }
         }
 
